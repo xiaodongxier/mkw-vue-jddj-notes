@@ -2,9 +2,9 @@
 
 ![logo](https://docsify.js.org/_media/icon.svg)
 
-# 视频教程笔记 <small>小东西儿</small>
+# Vue3系统入门与项目实战
 
-- 本文档是作者通过慕课网等相关视频学习平台学习记录下的笔记
+- 本文档是作者通过学习《慕课网Vue3系统入门与项目实战》视频课程学习记录下的笔记
 
 <!-- 
 - 视频教程学习笔记记录
@@ -12,9 +12,9 @@
 - 无需生成 html 文件
 - 众多主题 
 -->
-[![stars](https://badgen.net/github/stars/xiaodongxier/videoNotes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/videoNotes) [![stars](https://badgen.net/github/forks/xiaodongxier/videoNotes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/videoNotes)
+[![stars](https://badgen.net/github/stars/xiaodongxier/mkw-vue-jddj-notes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/mkw-vue-jddj-notes) [![stars](https://badgen.net/github/forks/xiaodongxier/mkw-vue-jddj-notes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/mkw-vue-jddj-notes)
 
 
 
-[GitHub](https://github.com/xiaodongxier/videoNotes.git)
+[GitHub](https://github.com/xiaodongxier/mkw-vue-jddj-notes.git)
 [开 始](README)
