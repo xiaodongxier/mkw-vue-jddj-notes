@@ -4,8 +4,9 @@
 
 > 课程学习步骤
 > 1. 笔记使用Mweb记录并存储在GitHub中Blog项目中
-> 2. 代码使用vs code 存储在GitHub中放入vue项目中
-> 3. 最后思维导图进行总结
+> 2. 代码使用vs code 存储在GitHub中放入 codeNotes 项目中
+> 3. 视频笔记通过 docsify 部署在 GitHub 上的 videoNotes 项目中，并通过 GitHub pages 进行展示
+> 4. 最后思维导图进行总结
 
 ---
 
