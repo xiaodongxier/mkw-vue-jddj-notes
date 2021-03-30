@@ -86,27 +86,27 @@ const vm = app.mount('#list2-1-1')
     <div id="list2-2-1"></div>
 </output>
 <script>
-    const app = Vue.createApp({
-        data(){
-            return {
-                message: "hello world"
-            }
-        },
-        beforeCreate(){
-            console.log("beforeCreate")  
-        },
-        created(){
-            console.log("created")  
-        },
-        beforeMount(){
-            console.log("beforeMount")  
-        },
-        mounted(){
-            console.log("mounted")  
-        },
-        template:"<div>{{message}}</div>"
-    })
-    const vm = app.mount('#list2-2-1')
+const app = Vue.createApp({
+    data(){
+        return {
+            message: "hello world"
+        }
+    },
+    beforeCreate(){
+        console.log("beforeCreate")  
+    },
+    created(){
+        console.log("created")  
+    },
+    beforeMount(){
+        console.log("beforeMount")  
+    },
+    mounted(){
+        console.log("mounted")  
+    },
+    template:"<div>{{message}}</div>"
+})
+const vm = app.mount('#list2-2-1')
 </script>
 
 
