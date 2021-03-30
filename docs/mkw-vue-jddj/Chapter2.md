@@ -25,7 +25,6 @@
     const vm = app.mount('#root')
 </script>
 ```
-<div class="demo">
 <output><div id="list2-1-1"></div></output>
 <script>
 const app = Vue.createApp({
@@ -38,7 +37,6 @@ const app = Vue.createApp({
 })
 const vm = app.mount('#list2-1-1')
 </script>
-</div>
 
 
 
