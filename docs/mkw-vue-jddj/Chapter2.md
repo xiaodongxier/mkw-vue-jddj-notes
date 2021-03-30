@@ -139,7 +139,6 @@ const vm = app.mount('#list2-1-1')
             console.log("unmounted")
             console.log(document.getElementById("root").innerHTML,"unmounted")
         },
-        
         template:"<div>{{message}}</div>"
     })
     const vm = app.mount('#root')
