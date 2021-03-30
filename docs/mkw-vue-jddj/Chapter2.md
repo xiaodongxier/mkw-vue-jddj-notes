@@ -46,6 +46,68 @@ const vm = app.mount('#list2-1-1')
 ##  2-2 理解 Vue 中的生命周期函数（1） (10:49)
 
 
+```html
+<div id="root"></div>
+<script>
+    // 生命周期函数：在某一时刻自动执行的函数
+    const app = Vue.createApp({
+        data(){
+            return {
+                message: "hello world"
+            }
+        },
+        // 实例创建之前自动执行的函数
+        beforeCreate(){
+            console.log("beforeCreate")  
+        },
+        // 初始化结束 事件 生命周期函数 依赖注入 双向绑定 实例创建完成 都分析结束后执行
+        // --实例创建之后自动执行的函数--
+        created(){
+            console.log("created")  
+        },
+        // 判断实例是否存在templatr模版选项
+        // yes 存在   模版变成一个函数(vue底层代码实现)  &  no 不存在
+        // --在组件内容被渲染到页面之前立即执行的函数--
+        beforeMount(){
+            console.log("beforeMount")  
+        },
+        // 函数与数据进行一些结合
+        // --在组件内容被渲染到页面之后自动执行的函数--
+        mounted(){
+            console.log("mounted")  
+        },
+        template:"<div>{{message}}</div>"
+    })
+    const vm = app.mount('#root')
+</script>
+```
+
+<output>
+    <div id="list2-2-1"></div>
+</output>
+<script>
+    const app = Vue.createApp({
+        data(){
+            return {
+                message: "hello world"
+            }
+        },
+        beforeCreate(){
+            console.log("beforeCreate")  
+        },
+        created(){
+            console.log("created")  
+        },
+        beforeMount(){
+            console.log("beforeMount")  
+        },
+        mounted(){
+            console.log("mounted")  
+        },
+        template:"<div>{{message}}</div>"
+    })
+    const vm = app.mount('#list2-2-1')
+</script>
 
 
 
