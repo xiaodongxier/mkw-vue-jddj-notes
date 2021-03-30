@@ -45,6 +45,8 @@ const vm = app.mount('#list2-1-1')
 
 ##  2-2 理解 Vue 中的生命周期函数（1） (10:49)
 
+![lifecycle](./media/lifecycle.png)
+
 
 ```html
 <div id="root"></div>
@@ -85,7 +87,64 @@ const vm = app.mount('#list2-1-1')
 ## 2-3 理解 Vue 中的生命周期函数（2） (12:56)
 
 
-
+```html
+<div id="root"></div>
+<script>
+    // 生命周期函数：在某一时刻自动执行的函数
+    const app = Vue.createApp({
+        data(){
+            return {
+                message: "hello world"
+            }
+        },
+        // 实例创建之前自动执行的函数
+        beforeCreate(){
+            console.log("beforeCreate")  
+        },
+        // 初始化结束 事件 生命周期函数 依赖注入 双向绑定 实例创建完成 都分析结束后执行
+        // --实例创建之后自动执行的函数--
+        created(){
+            console.log("created")  
+        },
+        // 判断实例是否存在templatr模版选项
+        // yes 存在   模版变成一个函数(vue底层代码实现)  &  no 不存在template 寻找dom节点里面的进行处理
+        // --在组件内容被渲染到页面之前立即执行的函数--
+        beforeMount(){
+            console.log("beforeMount")  
+            console.log(document.getElementById("root").innerHTML,"beforeMount")
+        },
+        // 函数与数据进行一些结合
+        // --在组件内容被渲染到页面之后自动执行的函数--
+        mounted(){
+            console.log("mounted")  
+            console.log(document.getElementById("root").innerHTML,"mounted")
+        },
+        // 当( date 中的)数据发生变化时会执行的函数
+        beforeUpdate(){
+            console.log("beforeUpdate")
+            console.log(document.getElementById("root").innerHTML,"beforeUpdate")
+        },
+        // 当( date 中的)数据发生变化,同时页面完成更新后，会自动执行的函数
+        updated(){
+            console.log("updated")
+            console.log(document.getElementById("root").innerHTML,"updated")
+        },
+        // 当vue应用失效时，自动执行的函数
+        beforeUnmount(){
+            console.log("beforeUnmount")
+            console.log(document.getElementById("root").innerHTML,"beforeUnmount")
+        },
+        // 当vue应用失效时，且dom完全销毁之后，自动执行的函数
+        unmounted(){
+            console.log("unmounted")
+            console.log(document.getElementById("root").innerHTML,"unmounted")
+        },
+        
+        template:"<div>{{message}}</div>"
+    })
+    const vm = app.mount('#root')
+</script>
+```
 
 
 
