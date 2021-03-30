@@ -25,7 +25,10 @@
     const vm = app.mount('#root')
 </script>
 ```
-<output><div id="list2-1-1"></div></output>
+
+<output>
+    <div id="list2-1-1"></div>
+</output>
 <script>
 const app = Vue.createApp({
     data(){
