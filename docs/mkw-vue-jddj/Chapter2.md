@@ -28,21 +28,15 @@
 <div class="demo">
 <output><div id="list2-1-1"></div></output>
 <script>
-    // Vue.createApp 创建vue实例
-    Vue.createApp({
-        data(){
-            return {
-                content: 1
-            }
-        },
-        // 页面加载完成执行的函数
-        mounted(){
-            setInterval(()=>{
-                this.content += 1
-            },1000)
-        },
-        template: '<div>{{content}}</div>'
-    }).mount('#list2-1-1')
+const app = Vue.createApp({
+    data(){
+        return {
+            message: "hello world"
+        }
+    },
+    template:"<div>{{message}}</div>"
+})
+const vm = app.mount('#list2-1-1')
 </script>
 </div>
 
