@@ -14,25 +14,3 @@
     * [第11章 商家展示功能开发（下）](mkw-vue-jddj/Chapter11)
     * [第12章 核心购物链路开发](mkw-vue-jddj/Chapter12)
     * [第13章 真机调试及工程发布流程](mkw-vue-jddj/Chapter13)
-
-
-
-
-
-
-
-
-<div id="demo2_2_1"></div>
-
-```js
-const app2_2_1 = Vue.createApp({
-    data() {
-        return {
-            message: "<h1>hello world</h1>",
-            messag1e: "<h1>hello w11orld</h1>"
-        }
-    },
-    template: "<div v-html='message'></div>"
-})
-const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
-```

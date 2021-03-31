@@ -197,77 +197,104 @@ const vm = app.mount('#list2-1-1')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> v-bind 可以与输入框的这些属性进行绑定
+
+```html
+<div id="demo2_2_3"></div>
+<script>
+    const app2_2_3 = Vue.createApp({
+        data() {
+            return {
+                disable1: false,
+                disable2: true
+            }
+        },
+        template: 'false:<input type="text" :disabled="disable1"> <br> true:<input type="text" :disabled="disable2">'
+    })
+
+    const vm2_2_3 = app2_2_3.mount('#demo2_2_3')
+</script>
+```
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法3" src="https://codepen.io/xiaodongxier/embed/yLgVWBG?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/yLgVWBG'>Vue3系统入门与项目实战-常用模版语法3</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+> 可以写一些全局的方法 & js语句是不行的 & 此处需要补充 js方法与语句的区别
+
+```html
+<div id="demo2_2_6"></div>
+<script>
+    const app2_2_6 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world"
+            }
+        },
+        // 判断最大值
+        template: "<div>{{Math.max(1,2,3,4)}}</div>"
+    })
+    const vm2_2_6 = app2_2_6.mount('#demo2_2_6')
+</script>
+```
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法5" src="https://codepen.io/xiaodongxier/embed/rNjWgyB?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/rNjWgyB'>Vue3系统入门与项目实战-常用模版语法4</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+> v-once  变量只渲染一次
+
+```html
+<div id="demo2_2_7"></div>
+<script>
+    const app2_2_7 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world"
+            }
+        },
+        template: "<div v-once>{{message}}</div>"
+    })
+    const vm2_2_7 = app2_2_7.mount('#demo2_2_7')
+</script>
+```
+
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法5" src="https://codepen.io/xiaodongxier/embed/VwPmOWb?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/VwPmOWb'>Vue3系统入门与项目实战-常用模版语法5</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+> v-if  变量只渲染一次 & 如果是false 那么 dom节点被移除
+
+```html
+<div id="demo2_2_8"></div>
+<script>
+    const app2_2_8 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world",
+                show: false
+            }
+        },
+        template: "<div v-if='show'>{{message}}</div>"
+    })
+    const vm2_2_8 = app2_2_8.mount('#demo2_2_8')
+</script>
+```
+
+<iframe height="350" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法6" src="https://codepen.io/xiaodongxier/embed/NWdbVaE?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/NWdbVaE'>Vue3系统入门与项目实战-常用模版语法6</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 ## 2-5 常用模版语法讲解（2） (08:46)
