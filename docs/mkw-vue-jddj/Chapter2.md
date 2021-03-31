@@ -291,13 +291,46 @@ const vm = app.mount('#list2-1-1')
 </script>
 ```
 
-<iframe height="350" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法6" src="https://codepen.io/xiaodongxier/embed/NWdbVaE?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe class="wyj" height="350" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法6" src="https://codepen.io/xiaodongxier/embed/NWdbVaE?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/xiaodongxier/pen/NWdbVaE'>Vue3系统入门与项目实战-常用模版语法6</a> by 小东西儿
   (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 
 ## 2-5 常用模版语法讲解（2） (08:46)
+
+
+
+
+> 指令简写
+> v-on  简写 @   
+> v-bind  简写：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
