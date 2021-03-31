@@ -308,7 +308,7 @@ const vm = app.mount('#list2-1-1')
 
 
 
-
+> 动态属性 :[title]     :[event]
 
 
 
