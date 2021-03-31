@@ -145,72 +145,134 @@ const vm = app.mount('#list2-1-1')
 </script>
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 2-4 常用模版语法讲解（1） (09:55)
+
+> v-html
+
+```html
+<!--  v-html  -->
+<div id="demo2_2_1"></div>
+<script>
+    const app2_2_1 = Vue.createApp({
+        data() {
+            return {
+                message: "<h1>hello world</h1>"
+            }
+        },
+        template: "<div v-html='message'></div>"
+    })
+
+    const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
+</script>
+```
+
+<output>
+    <div id="demo2_2_1"></div>
+</output>
+<script>
+    const app2_2_1 = Vue.createApp({
+        data() {
+            return {
+                message: "<h1>hello world</h1>"
+            }
+        },
+        template: "<div v-html='message'></div>"
+    })
+    const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
+</script>
+
+
+> v-bind 
+
+```html
+<!--  v-bind  -->
+<div id="demo2_2_2"></div>
+<script>
+    const app2_2_2 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world"
+            }
+        },
+        template: "<div :title='message'>{{message}}</div>"
+    })
+    const vm2_2_2 = app2_2_2.mount('#demo2_2_2')
+</script>
+```
+
+<output>
+    <div id="demo2_2_2"></div>
+</output>
+<script>
+    const app2_2_2 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world"
+            }
+        },
+        template: "<div :title='message'>{{message}}</div>"
+    })
+    const vm2_2_2 = app2_2_2.mount('#demo2_2_2')
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
