@@ -147,10 +147,13 @@ const vm = app.mount('#list2-1-1')
 
 ## 2-4 常用模版语法讲解（1） (09:55)
 
+<iframe src="../mkw-vue-jddj/code/9-常用模版语法.html" frameborder="0" height=300></iframe>
+
+[预览](../mkw-vue-jddj/code/9-常用模版语法.html)
+
 > v-html
 
 ```html
-<!--  v-html  -->
 <div id="demo2_2_1"></div>
 <script>
     const app2_2_1 = Vue.createApp({
@@ -166,10 +169,11 @@ const vm = app.mount('#list2-1-1')
 </script>
 ```
 
-<output>
+<output data-lang="output">
     <div id="demo2_2_1"></div>
 </output>
 <script>
+    window.onload = function(){
     const app2_2_1 = Vue.createApp({
         data() {
             return {
@@ -179,7 +183,9 @@ const vm = app.mount('#list2-1-1')
         template: "<div v-html='message'></div>"
     })
     const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
+    }
 </script>
+
 
 
 > v-bind 

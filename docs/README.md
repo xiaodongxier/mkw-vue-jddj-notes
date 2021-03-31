@@ -17,24 +17,22 @@
 
 
 
-<output>
-<div id="root"></div>
-</output>
 
-<script>
-    // Vue.createApp 创建vue实例
-    Vue.createApp({
-        data(){
-            return {
-                content: 1
-            }
-        },
-        // 页面加载完成执行的函数
-        mounted(){
-            setInterval(()=>{
-                this.content += 1
-            },1000)
-        },
-        template: '<div>{{content}}</div>'
-    }).mount('#root')
-</script>
+
+
+
+
+<div id="demo2_2_1"></div>
+
+```js
+const app2_2_1 = Vue.createApp({
+    data() {
+        return {
+            message: "<h1>hello world</h1>",
+            messag1e: "<h1>hello w11orld</h1>"
+        }
+    },
+    template: "<div v-html='message'></div>"
+})
+const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
+```

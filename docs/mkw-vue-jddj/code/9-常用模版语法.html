@@ -1,0 +1,155 @@
+<!--
+ * @Date: 2021-03-24 22:01:23
+ * @LastEditTime: 2021-03-31 15:09:06
+ * @Author: WangYongJie
+ * @Private-email: admin@xiaodongxier.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/xiaodongxier/cdn/static/image/favicon.ico"
+        type="image/x-icon">
+    <title>常用模版语法</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <!--  v-html  -->
+    <div id="demo2_2_1"></div>
+    <script>
+        const app2_2_1 = Vue.createApp({
+            data() {
+                return {
+                    message: "<h1>hello world</h1>"
+                }
+            },
+            template: "<div v-html='message'></div>"
+        })
+
+        const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
+    </script>
+
+    <!--  v-bind  -->
+    <div id="demo2_2_2"></div>
+    <script>
+        const app2_2_2 = Vue.createApp({
+            data() {
+                return {
+                    message: "hello world"
+                }
+            },
+            template: "<div :title='message'>{{message}}</div>"
+        })
+
+        const vm2_2_2 = app2_2_2.mount('#demo2_2_2')
+    </script>
+
+    <!--  v-bind 可以与输入框的这些属性进行绑定 -->
+    <div id="demo2_2_3"></div>
+    <script>
+        const app2_2_3 = Vue.createApp({
+            data() {
+                return {
+                    disabled: false
+                }
+            },
+            template: 'false:<input type="text" :disabled="disabled">'
+        })
+
+        const vm2_2_3 = app2_2_3.mount('#demo2_2_3')
+    </script>
+
+
+    <!--  v-bind 可以与输入框的这些属性进行绑定 -->
+    <div id="demo2_2_4"></div>
+    <script>
+        const app2_2_4 = Vue.createApp({
+            data() {
+                return {
+                    disabled: true
+                }
+            },
+            template: 'true:<input type="text" :disabled="disabled">'
+        })
+
+        const vm2_2_4 = app2_2_4.mount('#demo2_2_4')
+    </script>
+
+
+    <!--  可以写一些表达式 -->
+    <div id="demo2_2_5"></div>
+    <script>
+        const app2_2_5 = Vue.createApp({
+            data() {
+                return {
+                    message: "hello world"
+                }
+            },
+            template: "<div>{{'a' + 'b'}}</div>"
+        })
+
+        const vm2_2_5 = app2_2_5.mount('#demo2_2_5')
+    </script>
+
+
+    <!--  可以写一些全局的方法 & js语句是不行的 & 此处需要补充 js方法与语句的区别-->
+    <div id="demo2_2_6"></div>
+    <script>
+        const app2_2_6 = Vue.createApp({
+            data() {
+                return {
+                    message: "hello world"
+                }
+            },
+            // 判断最大值
+            template: "<div>{{Math.max(1,2,3,4)}}</div>"
+        })
+
+        const vm2_2_6 = app2_2_6.mount('#demo2_2_6')
+    </script>
+
+
+    <!--  v-once  变量只渲染一次-->
+    <div id="demo2_2_7"></div>
+    <script>
+        const app2_2_7 = Vue.createApp({
+            data() {
+                return {
+                    message: "hello world"
+                }
+            },
+            // 判断最大值
+            template: "<div v-once>{{message}}</div>"
+        })
+
+        const vm2_2_7 = app2_2_7.mount('#demo2_2_7')
+    </script>
+
+
+    <!--  v-if  变量只渲染一次 & 如果是false 那么 dom节点被移除-->
+    <div id="demo2_2_8"></div>
+    <script>
+        const app2_2_8 = Vue.createApp({
+            data() {
+                return {
+                    message: "hello world",
+                    show: false
+                }
+            },
+            // 判断最大值
+            template: "<div v-if='show'>{{message}}</div>"
+        })
+
+        const vm2_2_8 = app2_2_8.mount('#demo2_2_8')
+    </script>
+
+
+
+
+</body>
+</html>
+
