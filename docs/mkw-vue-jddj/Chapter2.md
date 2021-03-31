@@ -303,7 +303,7 @@ const vm = app.mount('#list2-1-1')
 
 
 > 指令简写
-> v-on  简写 @   
+> v-on：  简写 @   
 > v-bind  简写：
 
 
