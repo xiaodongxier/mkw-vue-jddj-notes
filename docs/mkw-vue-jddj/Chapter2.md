@@ -147,9 +147,6 @@ const vm = app.mount('#list2-1-1')
 
 ## 2-4 常用模版语法讲解（1） (09:55)
 
-<iframe src="../mkw-vue-jddj/code/9-常用模版语法.html" frameborder="0" height=300></iframe>
-
-[预览](../mkw-vue-jddj/code/9-常用模版语法.html)
 
 > v-html
 
@@ -169,29 +166,16 @@ const vm = app.mount('#list2-1-1')
 </script>
 ```
 
-<output data-lang="output">
-    <div id="demo2_2_1"></div>
-</output>
-<script>
-    window.onload = function(){
-    const app2_2_1 = Vue.createApp({
-        data() {
-            return {
-                message: "<h1>hello world</h1>"
-            }
-        },
-        template: "<div v-html='message'></div>"
-    })
-    const vm2_2_1 = app2_2_1.mount('#demo2_2_1')
-    }
-</script>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法" src="https://codepen.io/xiaodongxier/embed/zYNoXJX?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/zYNoXJX'>Vue3系统入门与项目实战-常用模版语法1</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 
 > v-bind 
 
 ```html
-<!--  v-bind  -->
 <div id="demo2_2_2"></div>
 <script>
     const app2_2_2 = Vue.createApp({
@@ -206,20 +190,10 @@ const vm = app.mount('#list2-1-1')
 </script>
 ```
 
-<output>
-    <div id="demo2_2_2"></div>
-</output>
-<script>
-    const app2_2_2 = Vue.createApp({
-        data() {
-            return {
-                message: "hello world"
-            }
-        },
-        template: "<div :title='message'>{{message}}</div>"
-    })
-    const vm2_2_2 = app2_2_2.mount('#demo2_2_2')
-</script>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法2" src="https://codepen.io/xiaodongxier/embed/NWdbmmy?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/NWdbmmy'>Vue3系统入门与项目实战-常用模版语法2</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 
