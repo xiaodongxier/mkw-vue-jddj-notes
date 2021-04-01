@@ -300,8 +300,6 @@ const vm = app.mount('#list2-1-1')
 ## 2-5 常用模版语法讲解（2） (08:46)
 
 
-
-
 > 指令简写
 > v-on：  简写 @   
 > v-bind  简写：
@@ -311,8 +309,71 @@ const vm = app.mount('#list2-1-1')
 > 动态属性 :[title]     :[event]
 
 
+```html
+<!-- 动态属性(动态参数) -->
+<div id="demo2_2_9"></div>
+<script>
+    const app2_2_9 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world",
+                name: "title",
+                event: "mouseenter"
+            }
+        },
+        methods: {
+            handleBtnClick(){
+                alert("click")
+            }
+        },
+        // 模版事件绑定的时候，方法一定是写在 methods 对象里面的，否则是不生效的
+        template: `<div 
+                        @[event]='handleBtnClick'
+                        :[name]='message'
+                        >{{message}}</div>`
+    })
+    const vm2_2_9 = app2_2_9.mount('#demo2_2_9')
+</script>
+```
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法7-动态属性" src="https://codepen.io/xiaodongxier/embed/KKaWPXr?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/KKaWPXr'>Vue3系统入门与项目实战-常用模版语法7-动态属性</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
+
+> 修饰符 简化常用代码的缩写 
+
+```html
+<div id="demo2_2_10"></div>
+<script>
+    const app2_2_10 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world",
+                name: "title",
+                event: "mouseenter"
+            }
+        },
+        methods: {
+            handleClick(e){
+                // e.preventDefault();
+            }
+        },
+        // 模版事件绑定的时候，方法一定是写在 methods 对象里面的，否则是不生效的
+        template: `<form action="https://www.baidu.com" @click.prevent="handleClick">
+                        <button type="submit">提交</button>
+                    </form>`
+    })
+    const vm2_2_10 = app2_2_10.mount('#demo2_2_10')
+</script>   
+```
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Vue3系统入门与项目实战-常用模版语法8-修饰符" src="https://codepen.io/xiaodongxier/embed/GRrWKQM?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/xiaodongxier/pen/GRrWKQM'>Vue3系统入门与项目实战-常用模版语法8-修饰符</a> by 小东西儿
+  (<a href='https://codepen.io/xiaodongxier'>@xiaodongxier</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 
