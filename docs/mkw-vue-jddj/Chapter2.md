@@ -378,10 +378,68 @@ const vm = app.mount('#list2-1-1')
 
 ## 2-6 数据，方法，计算属性和侦听器（1） (15:47)
 
+> vm_2_6_1.$data.message
+> vm_2_6_1.message （第一层数据也可以这样获取）
+
+
+```html
+<div id="demo_2_6_1"></div>
+<script>
+    const app_2_6_1 = Vue.createApp({
+        data() {
+            return {
+                message: "hello world"
+            }
+        },
+        template: "<div>{{message}}</div>"
+    })
+
+    const vm_2_6_1 = app_2_6_1.mount("#demo_2_6_1")
+</script>
+```
 
 
 
 
+
+
+
+```html
+
+```
+
+
+
+
+
+
+
+
+
+```html
+
+```
+
+
+
+
+
+
+
+```html
+
+```
+
+
+
+
+
+
+
+
+```html
+
+```
 
 
 
