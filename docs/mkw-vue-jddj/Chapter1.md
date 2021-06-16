@@ -4,8 +4,8 @@
 ##  1-1 课前须知，这里有你需要了解的一切 (04:34)
 
 
-![](media/16163325593577/16163335037760.jpg)
-
+<!-- ![](media/16163325593577/16163335037760.jpg) -->
+![](https://cdn.jsdelivr.net/gh/xiaodongxier/static@main/image/20210616234434.jpg)
 
 ### 知识储备
 
@@ -18,15 +18,19 @@
 
 ### 课程分为**基础**和**实战**两个部分
 
-![基础](media/16163325593577/16163341231589.jpg)
+<!-- ![基础](media/16163325593577/16163341231589.jpg) -->
+![基础](https://cdn.jsdelivr.net/gh/xiaodongxier/static@main/image/20210616234507.jpg)
 
-![基础](media/16163325593577/16163342090867.jpg)
+<!-- ![基础](media/16163325593577/16163342090867.jpg) -->
+![基础](https://cdn.jsdelivr.net/gh/xiaodongxier/static@main/image/20210616234522.jpg)
 
-![](media/16163325593577/16163342596486.jpg)
+<!-- ![](media/16163325593577/16163342596486.jpg) -->
+![](https://cdn.jsdelivr.net/gh/xiaodongxier/static@main/image/20210616234536.jpg)
 
 ### 学完课程收获
 
-![](media/16163325593577/16163344132129.jpg)
+<!-- ![](media/16163325593577/16163344132129.jpg) -->
+![](https://cdn.jsdelivr.net/gh/xiaodongxier/static@main/image/20210616234552.jpg)
 
 * 理解并运用vue3语法特性
 * 对vue原理具备一定理解
