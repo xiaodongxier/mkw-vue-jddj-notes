@@ -1,5 +1,6 @@
-* [首页](README)
-* [Vue3 系统入门与项目实战](mkw-vue-jddj/README)
+* [简介](README)
+<!-- * [Vue3 系统入门与项目实战](mkw-vue-jddj/README) -->
+* Vue3 系统入门与项目实战
     * [第1章 Vue 语法初探 ](mkw-vue-jddj/Chapter1)
     * [第2章 Vue 基础语法](mkw-vue-jddj/Chapter2)
     * [第3章 探索组件的理念](mkw-vue-jddj/Chapter3)

@@ -1,16 +1,16 @@
-# 目录
+# Vue3 系统入门与项目实战
 
-* [Vue3 系统入门与项目实战](mkw-vue-jddj/README)
-    * [第1章 Vue 语法初探 ](mkw-vue-jddj/Chapter1)
-    * [第2章 Vue 基础语法](mkw-vue-jddj/Chapter2)
-    * [第3章 探索组件的理念](mkw-vue-jddj/Chapter3)
-    * [第4章 Vue 中的动画](mkw-vue-jddj/Chapter4)
-    * [第5章 Vue 中的高级语法 ](mkw-vue-jddj/Chapter5)
-    * [第6章 Composition API](mkw-vue-jddj/Chapter6)
-    * [第7章 Vue 项目开发配套工具讲解](mkw-vue-jddj/Chapter7)
-    * [第8章 “京东到家”项目首页开发](mkw-vue-jddj/Chapter8)
-    * [第9章 登陆功能开发](mkw-vue-jddj/Chapter9)
-    * [第10章 商家展示功能开发（上）](mkw-vue-jddj/Chapter10)
-    * [第11章 商家展示功能开发（下）](mkw-vue-jddj/Chapter11)
-    * [第12章 核心购物链路开发](mkw-vue-jddj/Chapter12)
-    * [第13章 真机调试及工程发布流程](mkw-vue-jddj/Chapter13)
+课程地址：[https://coding.imooc.com/class/chapter/472.html](https://coding.imooc.com/class/chapter/472.html)
+
+> 课程学习步骤
+> 1. 笔记使用Mweb记录并存储在GitHub中 `mkw-vue-jddj-notes` 项目
+> 2. 代码使用vs code 存储在GitHub中 `mkw-vue-jddj-notes` 项目
+> 3. 视频笔记通过 `docsify` 部署在 GitHub 上的 `mkw-vue-jddj-notes` 项目中，并通过 GitHub pages 进行展示
+> 4. 最后思维导图进行总结
+
+---
+
+> 课程从 Vue3 基础语法，到组件原理、动画、代码设计，再到新语法扩展，全面系统地梳理 Vue 知识点。学习过程中，老师将倾囊相授多年的“避坑经验” ，带你以企业级代码质量和工程开发流程完成“京东到家”应用，实现对框架的彻底掌握。
+
+
+![](media/16163327642673/16163331294919.jpg)

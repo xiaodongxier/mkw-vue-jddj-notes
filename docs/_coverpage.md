@@ -12,7 +12,8 @@
 - 无需生成 html 文件
 - 众多主题 
 -->
-[![stars](https://badgen.net/github/stars/xiaodongxier/mkw-vue-jddj-notes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/mkw-vue-jddj-notes) [![stars](https://badgen.net/github/forks/xiaodongxier/mkw-vue-jddj-notes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/mkw-vue-jddj-notes)
+<!-- [![stars](https://badgen.net/github/stars/xiaodongxier/mkw-vue-jddj-notes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/mkw-vue-jddj-notes)  -->
+<!-- [![stars](https://badgen.net/github/forks/xiaodongxier/mkw-vue-jddj-notes?icon=github&color=4ab8a1)](https://github.com/xiaodongxier/mkw-vue-jddj-notes) -->
 
 
 
